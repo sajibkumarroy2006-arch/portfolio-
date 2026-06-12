@@ -106,33 +106,30 @@ body {
     pointer-events: none;
 }
 header {
-    position: fixed !important;
-    top: 0 !important;
-    left: 0 !important;
-    width: 100% !important;
-    padding: 30px 10% !important; /* ল্যাপটপে জোর করে ওপর-নিচে ফাঁকা করবে */
-    display: flex !important;
-    justify-content: space-between !important;
-    align-items: center !important;
-    z-index: 1000 !important;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 10%;
+    background: rgba(6, 11, 19, 0.8);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
 }
 
-@media (max-width: 768px) {
-    header {
-        padding: 20px 5% !important; /* মোবাইলেও জোর করে লাবণ্যর মতো ফাঁকা করবে */
-    }
-}
 .logo {
     font-size: 26px;
     font-weight: 700;
     color: #fff;
     letter-spacing: 1px;
-    
 }
 
 .logo span {
     color: #38bdf8;
 }
+
 .nav-links {
     display: flex;
     list-style: none;
