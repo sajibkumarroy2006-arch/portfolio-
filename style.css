@@ -106,17 +106,18 @@ body {
     pointer-events: none;
 }
 header {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 1000;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 25px 10%;
-    background: rgba(6, 11, 19, 0.8);
-    backdrop-filter: blur(12px);
-    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    position: fixed !important;
+    top: 0 !important;
+    left: 0 !important;
+    width: 100% !important;
+    padding: 35px 10% !important; /* ল্যাপটপে ওপর-নিচে ৩৫ পিক্সেল সুন্দর ফাঁকা জায়গা করবে */
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+    z-index: 1000 !important;
+    background: rgba(6, 11, 19, 0.😎 !important;
+    backdrop-filter: blur(12px) !important;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05) !important;
 }
 
 .logo {
@@ -1288,14 +1289,13 @@ nav {
     transform: scale(1.05);
 }
 
-/* মোবাইল স্ক্রিনের জন্য বিশেষ ফিক্স */
+/* মোবাইলে লাবণ্যর সাইটের মতো নিখুঁত স্পেসিং */
 @media (max-width: 768px) {
     header {
-        padding: 12px 5% !important; /* হেডারের সাইজ মোবাইলে ছোট হবে */
+        padding: 20px 5% !important; /* মোবাইলেও ওপর-নিচে ২০ পিক্সেল ফাঁকা জায়গা লক করবে */
     }
     .logo {
-        font-size: 22px !important;  /* লোগোর সাইজ একটু ছোট হবে যেন না কাটে */
-        line-height: 1.5 !important; /* ওপর-নিচের কেটে যাওয়া অংশ ১০০% ঠিক করবে */
-        display: inline-block !important;
+        font-size: 22px !important;
+        margin-top: 5px !important; /* মোবাইলে লোগোকে সামান্য নিচে নামাবে */
     }
 }
