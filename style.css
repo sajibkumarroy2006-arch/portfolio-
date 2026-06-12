@@ -111,22 +111,25 @@ header {
     top: 0;
     left: 0;
     width: 100%;
-    z-index: 1000;
+    padding: 30px 10%; 
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 25px 10%;
-    background: rgba(6, 11, 19, 0.8);
-    backdrop-filter: blur(12px);
-    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    z-index: 1000;
 }
 
+/* মোবাইলের জন্য লাবণ্যর মতো পারফেক্ট স্পেসিং */
+@media (max-width: 768px) {
+    header {
+        padding: 15px 5% !important; 
+    }
+}
 .logo {
     font-size: 26px;
     font-weight: 700;
     color: #fff;
     letter-spacing: 1px;
-    margin-top: 15px;
+    
 }
 
 .logo span {
