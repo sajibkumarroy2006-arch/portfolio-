@@ -105,23 +105,21 @@ body {
     z-index: -2;
     pointer-events: none;
 }
-
 header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    padding: 30px 10%; 
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    z-index: 1000;
+    position: fixed !important;
+    top: 0 !important;
+    left: 0 !important;
+    width: 100% !important;
+    padding: 30px 10% !important; /* ল্যাপটপে জোর করে ওপর-নিচে ফাঁকা করবে */
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+    z-index: 1000 !important;
 }
 
-/* মোবাইলের জন্য লাবণ্যর মতো পারফেক্ট স্পেসিং */
 @media (max-width: 768px) {
     header {
-        padding: 15px 5% !important; 
+        padding: 20px 5% !important; /* মোবাইলেও জোর করে লাবণ্যর মতো ফাঁকা করবে */
     }
 }
 .logo {
