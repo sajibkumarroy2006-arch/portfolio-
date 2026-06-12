@@ -1288,3 +1288,15 @@ nav {
 .project-card:hover .project-img {
     transform: scale(1.05);
 }
+
+/* মোবাইল স্ক্রিনের জন্য বিশেষ ফিক্স */
+@media (max-width: 768px) {
+    header {
+        padding: 12px 5% !important; /* হেডারের সাইজ মোবাইলে ছোট হবে */
+    }
+    .logo {
+        font-size: 22px !important;  /* লোগোর সাইজ একটু ছোট হবে যেন না কাটে */
+        line-height: 1.5 !important; /* ওপর-নিচের কেটে যাওয়া অংশ ১০০% ঠিক করবে */
+        display: inline-block !important;
+    }
+}
