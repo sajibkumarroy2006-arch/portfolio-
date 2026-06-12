@@ -1299,3 +1299,52 @@ nav {
         margin-top: 5px !important; /* মোবাইলে লোগোকে সামান্য নিচে নামাবে */
     }
 }
+
+/* ==============================================
+   সজিব ভাইয়ের সাইটের মোবাইল রেসপন্সিভ পারফেক্ট ফিক্স 
+   ============================================== */
+@media (max-width: 768px) {
+    header {
+        position: relative !important; /* ফিক্সড পজিশন সাময়িক বন্ধ করে ব্যাকগ্রাউন্ড ঠিক করার জন্য */
+        padding: 25px 5% !important; /* ওপর-নিচে সুন্দর ফাঁকা জায়গা তৈরি করবে */
+        display: flex !important;
+        flex-direction: column !important; /* লেখা ও মেনু ওপর-নিচে সুন্দর করে সাজাবে */
+        gap: 15px !important;
+        background: #060b13 !important; /* পুরো কালো ব্যাকগ্রাউন্ড লক করবে */
+        text-align: center !important;
+    }
+
+    .logo {
+        font-size: 24px !important;
+        display: block !important;
+        margin: 0 auto !important; /* লোগো একদম মাঝখানে আনবে */
+        width: 100% !important;
+    }
+
+    .nav-links {
+        display: flex !important;
+        flex-direction: row !important; /* মেনুর লিংকগুলো পাশাপাশি রাখবে */
+        justify-content: center !important;
+        flex-wrap: wrap !important;
+        gap: 15px !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        list-style: none !important;
+    }
+
+    .nav-links li {
+        margin: 0 !important; /* গাদাগাদি স্পেসিং দূর করবে */
+    }
+
+    .nav-links a {
+        font-size: 14px !important;
+    }
+
+    /* হিরো সেকশন যাতে হেডারের নিচে না ঢুকে যায় */
+    .hero-section {
+        height: auto !important;
+        margin-top: 40px !important;
+        padding-top: 20px !important;
+    }
+}
+
