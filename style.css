@@ -126,6 +126,8 @@ header {
     color: #fff;
     letter-spacing: 1px;
     line-height: 1.2;
+    margin-top: 5px;
+    display: inline-block
 }
 
 .logo span {
