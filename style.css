@@ -1288,3 +1288,55 @@ nav {
 .project-card:hover .project-img {
     transform: scale(1.05);
 }
+
+
+/* ==========================================================================
+   FORCE RESPONSIVE RESET (এডুকেশন জার্নি ফিক্স করার চূড়ান্ত কোড)
+   ========================================================================== */
+@media screen and (max-width: 992px) {
+    /* ১. এডুকেশন জার্নির মেইন কন্টেইনার ফিক্স */
+    .timeline, 
+    .timeline-item, 
+    .timeline-content {
+        width: 100% !important;
+        max-width: 100% !important;
+        min-width: 0 !important;
+        box-sizing: border-box !important;
+        float: none !important;
+        position: relative !important;
+        left: 0 !important;
+        margin-left: 0 !important;
+        padding-right: 10px !important;
+    }
+
+    /* ২. গ্রিড লেআউটগুলোকে এক কলামে নিচে নিচে নামানো */
+    .career-grid, 
+    .projects-grid, 
+    .contact-grid {
+        display: block !important; /* গ্রিড ভেঙে নরমাল ব্লক করা হলো */
+        width: 100% !important;
+    }
+
+    /* ৩. ভেতরের সব কার্ড বা বক্সের ফিক্সড সাইজ বাতিল করা */
+    .career-card, 
+    .project-card, 
+    .contact-box {
+        width: 100% !important;
+        max-width: 100% !important;
+        margin-bottom: 25px !important; /* একটার নিচে আরেকটা গ্যাপ বজায় রাখবে */
+        box-sizing: border-box !important;
+    }
+
+    /* ৪. পুরো ওয়েবসাইটের স্ক্রিন লক (যাতে ডানে-বামে স্ক্রল না হয়) */
+    html, body {
+        width: 100% !important;
+        max-width: 100% !important;
+        overflow-x: hidden !important;
+    }
+    
+    .container {
+        width: 92% !important;
+        max-width: 100% !important;
+        overflow-x: hidden !important;
+    }
+}
