@@ -586,7 +586,7 @@ footer {
     font-size: 14px;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 993px) {
     .hero-section {
         flex-direction: column-reverse;
         justify-content: center;
