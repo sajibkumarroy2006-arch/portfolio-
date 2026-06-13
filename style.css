@@ -586,7 +586,7 @@ footer {
     font-size: 14px;
 }
 
-@media screen and (max-width: 993px) {
+@media screen and (max-width: 992px) {
     .hero-section {
         flex-direction: column-reverse;
         justify-content: center;
@@ -683,7 +683,7 @@ footer {
 }
 
 /* মোবাইল রেসপনসিভ: ছোট স্ক্রিনে এক কলাম হয়ে যাবে */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 992px) {
     .sajib-contact-info {
         padding: 20px;
     }
@@ -733,7 +733,7 @@ footer {
 }
 
 /* মোবাইল রেসপনসিভ: মোবাইলে বাটনটি যেন স্ক্রিনের বেশি কাছে না চলে আসে */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 992px) {
     #scrollToTopBtn {
         bottom: 20px;
         right: 20px;
@@ -811,7 +811,7 @@ footer {
 }
 
 /* মোবাইলের জন্য সামান্য অ্যাডজাস্টমেন্ট */
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 992px) {
     .footer-links {
         gap: 12px;
     }
@@ -875,7 +875,7 @@ footer {
 }
 
 /* মোবাইল রেসপনসিভ: স্ক্রিন ছোট হলে প্যাডিং কিছুটা অ্যাডজাস্ট হবে */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 992px) {
     .career-goal-section {
         padding-top: 60px;
         padding-bottom: 60px;
@@ -991,7 +991,7 @@ footer {
 }
 
 /* মোবাইল রেসপনসিভ অ্যাডজাস্টমেন্ট */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 992px) {
     .education-journey-section {
         padding: 60px 5%;
     }
@@ -1095,7 +1095,7 @@ nav {
 /* =======================================================
    ২. রেসপনসিভ মিডিয়া কুয়েরি (শুধুমাত্র মোবাইলের জন্য)
    ======================================================= */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 992px) {
 
     /* মোবাইলে গোল বাটনটি ভেসে উঠবে */
     .mobile-menu-btn {
